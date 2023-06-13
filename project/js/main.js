@@ -45,7 +45,7 @@ function getWeather(city) {
         success: function(data) {
             console.log(data)
             $(".city").text(data.name);
-            $(".temp").text(data.temp);
+            $(".temp").text(data.main.temp);
         },
         error: function(error) {
             $(".error-message").text("An error occurred.")
