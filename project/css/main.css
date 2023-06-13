@@ -21,6 +21,10 @@ button {
   margin-top: 40px;
 }
 
+a {
+    color: #fff0ff;
+}
+
 .page-header {
   background-color: #00bda5;
   padding-top: 40px;

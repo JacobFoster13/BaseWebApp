@@ -9,14 +9,19 @@
   <div class="page-header">
     <% include ../helpers/navbar %>
   
-    <h1>I Wish This Would Open in Chrome</h1>
+    <h1>API Page</h1>
+  </div>
+  <div>
+    <input id="search" type="text" placeholder="Search by city...">
+    <button class="btn btn-success"type="button" onclick="searchWeather()">Search</button>
   </div>
 
-  <p>Click on the button for a nice surprise.</p>
-
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
-
-  <div id="image"></div>
+  <div class="city">
+  </div>
+  <div class="temp">
+  </div>
+  <div class="error-message">
+  </div>
   
 </body>
 

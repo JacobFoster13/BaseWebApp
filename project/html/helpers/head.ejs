@@ -23,5 +23,34 @@
 <!-- then bootstrap -->
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+<script>var weatherApiKey="<%= process.env.WEATHER_API_KEY %>";</script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js'
+    import {  } from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js'
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "<%= process.env.GOOGLE_API_KEY %>",
+      authDomain: "basewebapp-ac9d6.firebaseapp.com",
+      databaseURL: "https://basewebapp-ac9d6-default-rtdb.firebaseio.com",
+      projectId: "basewebapp-ac9d6",
+      storageBucket: "basewebapp-ac9d6.appspot.com",
+      messagingSenderId: "780579188707",
+      appId: "1:780579188707:web:68006cbf9b641154607ad6",
+      measurementId: "G-DLDWTN1R1P"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
 <!-- then our app's own js file -->
 <script src="js/main.js"></script>
